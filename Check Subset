@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+TestCase=int(input())
+#Loop for given no. of testcases
+while(TestCase!=0):
+    x,A,y,B=input(),set(input().split()),input(),set(input().split())    
+    print(A.issubset(B))
+    TestCase=TestCase-1
