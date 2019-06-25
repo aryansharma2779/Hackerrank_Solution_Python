@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+K=int(input())
+a=str(input())
+List=a.split()
+
+Dict={}
+for i in List:
+    Dict[i]=Dict.get(i,0)+1
+for i,j in Dict.items():
+    if j==1:
+        result=i
+print(result)
