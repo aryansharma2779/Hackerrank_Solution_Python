@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+A=set(input().split())
+limit=int(input())
+count=0
+for i in range(0,limit):
+    B=set(input().split())
+    if B.issubset(A):
+        count=count+1
+if limit==count:
+    print("True")
+else:
+    print("False")
