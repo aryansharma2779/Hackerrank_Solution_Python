@@ -1,0 +1,9 @@
+import numpy as np
+size=input()
+a=size.split()
+result=list()
+for i in a:
+    result.append(int(i))
+result1=np.array(result)
+result1.shape=(3,3)
+print(result1)
