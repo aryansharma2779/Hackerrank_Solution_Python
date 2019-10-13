@@ -1,0 +1,22 @@
+def mid(x):
+    l="-"
+    return l*x
+m,n=input().split()
+m=int(m)
+n=int(n)
+i=1
+lis=list()
+for j in range(int(m//2)):
+    result=""
+    c=(n-3*i)//2
+    result=mid(c)
+    z=".|."*i
+    result=result+z
+    result=result+mid(c)
+    print(result)
+    lis.append(result)
+    i+=2
+print(mid((n-7)//2)+"WELCOME"+mid((n-7)//2))
+for i in range(len(lis)-1,-1,-1):
+    print(lis[i])
+    
