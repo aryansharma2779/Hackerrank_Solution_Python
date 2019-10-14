@@ -1,0 +1,2 @@
+def findMedian(arr):
+    return statistics.median(arr)
