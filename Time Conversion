@@ -1,0 +1,14 @@
+def timeConversion(s):
+    time=s[8:10]
+    hour=int(s[0]+s[1])
+    if time=="PM" and hour<12:
+        hours=int(hour)+12
+        
+        hours=str(hours)
+        hours=hours+s[2:8]
+        return(hours)
+    elif time=="AM" and hour>=12:
+        hours=12-int(hour)
+        hours=str(hours)
+        hours="0"+hours+s[2:8]
+        return hours
