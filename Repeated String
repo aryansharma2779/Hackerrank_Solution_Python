@@ -1,0 +1,15 @@
+#!/bin/python3
+
+import math
+
+S=input()
+limit=int(input())
+com_rep=limit//len(S)
+z=limit-com_rep*len(S)
+a_count=S.count("a")
+temp=0
+if z!=0:
+    temp=S[:z].count("a")
+    
+
+print(a_count*com_rep+temp)
