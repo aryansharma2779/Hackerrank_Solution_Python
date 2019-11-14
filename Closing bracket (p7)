@@ -1,0 +1,21 @@
+data=input()
+index=int(input())
+if data[index]!="[":
+    print("-1")
+else:
+    temp=list(data)
+    temp1=temp[index:]
+    c=0
+    z=len(temp[:index])-1
+    for i in temp1:
+        z+=1
+        if i=="[":
+            c+=1
+        if i=="]":
+            c-=1
+        if c==0:
+            break
+    if c==0:
+        print(z)
+    else:
+        print("-1")
