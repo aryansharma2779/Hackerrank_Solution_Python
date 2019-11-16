@@ -1,0 +1,19 @@
+from collections import Counter
+size=int(input())
+data=list(map(int,input().split()))
+dict_data=Counter(data)
+num_shoe=int(input())
+amount=0
+while(num_shoe!=0):
+    a=list(map(int,input().split()))
+    if dict_data[a[0]]==0:
+        amount+=0
+    else:
+        dict_data[a[0]]-=1
+        
+        amount+=a[1]
+
+    
+
+    num_shoe-=1
+print(amount)
