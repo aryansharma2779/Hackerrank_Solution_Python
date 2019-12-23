@@ -1,0 +1,6 @@
+import cmath
+coordinate=complex(input())
+
+
+print(abs(coordinate))
+print(cmath.phase(coordinate))
