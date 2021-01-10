@@ -1,0 +1,15 @@
+def insertNodeAtPosition(head, data, position):
+    temp= head
+    pre = head
+    while temp != None:
+        if position ==1 :
+            dat = SinglyLinkedListNode(data)
+            dat.next = temp.next
+            pre.next=dat
+            return head
+        # print(head.data)
+        temp=temp.next
+        pre = temp
+        position -=1
+        
+    return head
